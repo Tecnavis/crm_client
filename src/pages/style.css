@@ -1,0 +1,242 @@
+/* App.css */
+.custom-container {
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.5), rgba(40, 167, 69, 0.5));
+  }
+  
+  .custom-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 576px) {
+    .custom-container {
+      padding: 10px;
+    }
+  
+    .custom-card {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .btn-1{
+    width: 100%;
+    height: 49px;
+    border-radius: 17px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+  }
+  /* ///whishlist */
+/* Wishlist Page Styling */
+.wishlist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.wishlist-table th, .wishlist-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wishlist-table th {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.price .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.price .current-price {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.stock-status {
+  color: #28a745;
+}
+
+.add-to-cart-btn {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+
+.remove button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e60000;
+  cursor: pointer;
+}
+
+.remove button:hover {
+  color: #ff0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wishlist-table thead {
+    display: none;
+  }
+
+  .wishlist-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .wishlist-table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-info img {
+    margin-bottom: 10px;
+  }
+
+  .wishlist-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+}
+/* //cart css */
+/* Cart.css */
+
+/* General styles for the cart list */
+.cart-list {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the product image */
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Styles for the size controls */
+.size-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* General button styles */
+.size-controls button {
+  background-color: #ae7e47;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.size-controls button:hover {
+  background-color: #c7a76b;
+}
+
+/* Disable button styles */
+.size-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styles for size item container */
+.size-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the available sizes section */
+.sizes {
+  margin-top: 10px;
+}
+
+.sizes strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Adjustments for the price section */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}

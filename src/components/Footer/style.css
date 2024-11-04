@@ -1,0 +1,67 @@
+/* General Footer Styling */
+.new-footer {
+  background-color: #f4f4f4; /* Light background */
+  padding: 20px 0; /* Reduced padding for smaller height */
+  border-top: 2px solid #e1e1e1;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-col {
+  margin-bottom: 10px; /* Reduced margin to decrease height */
+  text-align: center;
+}
+
+.footer-logo .logo-img {
+  max-width: 120px; /* Reduced logo size */
+  height: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px; /* Reduced margin for list items */
+}
+
+.footer-links li a {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links li a:hover {
+  color: #0056b3;
+}
+
+.new-footer p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4; /* Reduced line height to minimize vertical spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-bottom: 10px;
+  }
+
+  .text-md-end {
+    text-align: center;
+  }
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .error-content {
+    max-width: 600px;
+  }
+  
+  .error-code h1 {
+    font-size: 6rem;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character-face {
+    width: 100px;
+    height: 108px;
+    margin-left: -32px;
+    /* background: url("https://www.clipartmax.com/middle/m2H7i8A0i8A0A0G6_404-page-not-found-cartoon/") no-repeat center; */
+    background-size: cover;
+    display: inline-block;
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .search-box {
+    margin-top: 30px;
+  }
+  
+  .search-box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  button i {
+    font-size: 1.2rem;
+  }
+  
+  .error-character img {
+    margin-top: 40px;
+    max-width: 150px;
+  }
+  
+  @media (max-width: 600px) {
+    .error-code h1 {
+      font-size: 4rem;
+    }
+    .error-message {
+      font-size: 1rem;
+    }
+    .error-character img {
+      max-width: 100px;
+    }
+  }
+  
